@@ -1,0 +1,126 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu{
+    @media  screen and(max-width: 768px) {
+        display: none;
+    }
+    display: flex;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.menu-item__link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--graph-color);
+}
+
+
+.contact{
+    @media  screen and(max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and(min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.contact__link{
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+
+    color: var( --paragraph-color);
+
+    @media screen and(min-width: 1200px) {
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+
+}
+
+.contact__link:not(:last-child){
+    margin-bottom: 10px;
+
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 0;
+
+        margin-right: 30px;
+    }
+}
+
+.contact__icon{
+    margin-right: 8px;
+}
+
+.header{
+    @media screen and(min-width: 320px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and(min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+}
+
+.head-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+
+    @media screen and(min-width: 768px) {
+        margin-right: 88px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+
+        margin-right: 93px;
+    }
+}
+
+.nav__span{
+    color: #000;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.head-conteiner__btn{
+    border: 0;
+    background-color: #ffffff;
+
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
+}
